@@ -66,10 +66,21 @@ const navLink1 = {
 }
 const newNavLink1 = document.createElement('a')
 newNavLink1.href = navLink1.href
-newNavLink1.textContents = navLink1.textContents
+newNavLink1.textContent = navLink1.textContents
 
 nav.appendChild(newNavLink1)
-console.log(newNavLink1)
+
+
+const navLink2 = {
+  href: '#',
+  textContents: 'Yuperino',
+}
+const newNavLink2 = document.createElement('a')
+newNavLink2.href = navLink2.href
+newNavLink2.textContent = navLink2.textContents
+
+nav.prepend(newNavLink2)
+
 
 navLinks[0].textContent= siteContent.nav['nav-item-1']
 navLinks[1].textContent= siteContent.nav['nav-item-2']
